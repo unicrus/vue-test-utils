@@ -1,5 +1,6 @@
 import Vue, { VNodeData, ComponentOptions, FunctionalComponentOptions, Component } from 'vue'
 import { DefaultProps, PropsDefinition } from 'vue/types/options'
+import Cheerio from 'cheerio'
 
 /**
  * Utility type to declare an extended Vue constructor

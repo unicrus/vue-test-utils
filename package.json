@@ -29,7 +29,7 @@
     "test:unit:karma:only": "cross-env TARGET=browser karma start test/setup/karma.conf.js --single-run",
     "test:unit:node": "yarn build:test && yarn test:unit:node:only",
     "test:unit:node:only": "cross-env TEST_ENV=node mocha-webpack --webpack-config test/setup/webpack.test.config.js test/specs/render.spec.js test/specs/renderToString.spec.js --require test/setup/mocha.setup.js",
-    "test:types": "tsc -p packages/test-utils/types && tsc -p packages/server-test-utils/types"
+    "test:types": "tsc -p packages/test-utils/types && tsc -p packages/server-test-utils/types --allowSyntheticDefaultImports"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
